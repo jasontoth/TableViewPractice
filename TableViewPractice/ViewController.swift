@@ -12,6 +12,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     @IBOutlet weak var ListView: UITableView!
     
+    // data set for list page
     var list = ["", "🤬", "😘", "😎", "😱", "🤪"]
     
     override func viewDidLoad() {
@@ -22,18 +23,26 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         ListView.delegate = self
     }
 
+    // delegate - telling the app how many 'things' to display in the list
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return list.count;
     }
     
+    // dataSource - telling the app where to source the items in the list
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = UITableViewCell()
         cell.textLabel?.text = list[indexPath.row]
         return cell
-
     }
+    
+    // Hookup Naviagation Controller to List -> Details page
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "TransitionToDetails", sender: "🏝")
+    }
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
