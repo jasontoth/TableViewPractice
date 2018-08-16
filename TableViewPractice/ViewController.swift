@@ -39,10 +39,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     // Hookup Naviagation Controller to List -> Details page
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "TransitionToDetails", sender: "🏝")
+        tableView.deselectRow(at: indexPath, animated: true)
+        let instance = list[indexPath.row]
+        performSegue(withIdentifier: "TransitionToDetails", sender: instance)
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let detailsViewController = segue.destination as! DetailsViewController
+        
+        detailsViewController.item = sender as! String
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

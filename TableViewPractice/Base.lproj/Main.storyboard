@@ -42,16 +42,16 @@
             </objects>
             <point key="canvasLocation" x="972" y="33.733133433283363"/>
         </scene>
-        <!--View Controller-->
+        <!--Details View Controller-->
         <scene sceneID="Q9N-Ar-tPV">
             <objects>
-                <viewController id="Myr-0f-QmZ" sceneMemberID="viewController">
+                <viewController id="Myr-0f-QmZ" customClass="DetailsViewController" customModule="TableViewPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N5O-lK-H0t">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🏬" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxD-1u-mbo">
-                                <rect key="frame" x="78.5" y="104" width="218" height="239"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxD-1u-mbo">
+                                <rect key="frame" x="97.5" y="104" width="180" height="239"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="200"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -72,6 +72,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gSj-81-rBF"/>
                     </view>
+                    <connections>
+                        <outlet property="itemDetails" destination="SJ9-qk-NHT" id="8pc-uB-tkt"/>
+                        <outlet property="itemLabel" destination="bxD-1u-mbo" id="JYD-PR-VFS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sed-s3-cgX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
