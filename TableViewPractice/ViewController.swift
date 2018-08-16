@@ -33,15 +33,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = UITableViewCell()
-        cell.textLabel?.text = list[indexPath.row]
+        cell.textLabel?.text = list[indexPath.row] // use the array as the data source for the list page
         return cell
     }
     
     // Hookup Naviagation Controller to List -> Details page
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        let instance = list[indexPath.row]
-        performSegue(withIdentifier: "TransitionToDetails", sender: instance)
+        tableView.deselectRow(at: indexPath, animated: true) // deselect the last selected item in list page
+        let instance = list[indexPath.row] // get selected item
+        performSegue(withIdentifier: "TransitionToDetails", sender: instance) // pass selected item to details class for display
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
