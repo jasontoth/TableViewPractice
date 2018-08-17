@@ -10,35 +10,21 @@ import UIKit
 
 class DetailsViewController: UIViewController {
 
-    @IBOutlet weak var itemLabel: UILabel!
-    @IBOutlet weak var itemDetails: UILabel!
-    
-    var item = "No item"
+    @IBOutlet weak var logoImage: UILabel!
+    @IBOutlet weak var logoName: UILabel!
+    @IBOutlet weak var logoNumber: UILabel!
+    @IBOutlet weak var logoCategory: UILabel!
+    var item = Logo()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 
-        itemLabel.text = item
-        
-        if item == "" {
-            itemDetails.text = "item 0"
-        }
-        else if item == "🤬" {
-            itemDetails.text = "item 1"
-        }
-        else if item == "😘" {
-            itemDetails.text = "item 2"
-        }
-        else if item == "😎" {
-            itemDetails.text = "item 3"
-        }
-        else if item == "😱" {
-            itemDetails.text = "item 4"
-        }
-        else if item == "🤪" {
-            itemDetails.text = "item 5"
-        }
+        logoImage.text = item.stringLogo
+        logoName.text = "Name: \(item.name)"
+        logoNumber.text = item.number
+        logoCategory.text = item.category
+
     }
     
     override func didReceiveMemoryWarning() {

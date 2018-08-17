@@ -56,8 +56,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is my building" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJ9-qk-NHT">
-                                <rect key="frame" x="116.5" y="413" width="142" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJ9-qk-NHT">
+                                <rect key="frame" x="165" y="413" width="45" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4pE-pg-YTc">
+                                <rect key="frame" x="156.5" y="454" width="62" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7bW-yN-k1p">
+                                <rect key="frame" x="152" y="495" width="71" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -67,19 +79,25 @@
                         <constraints>
                             <constraint firstItem="SJ9-qk-NHT" firstAttribute="top" secondItem="bxD-1u-mbo" secondAttribute="bottom" constant="70" id="3qE-wk-nhP"/>
                             <constraint firstItem="bxD-1u-mbo" firstAttribute="top" secondItem="gSj-81-rBF" secondAttribute="top" constant="40" id="H2e-ro-rvP"/>
+                            <constraint firstItem="4pE-pg-YTc" firstAttribute="top" secondItem="SJ9-qk-NHT" secondAttribute="bottom" constant="20" id="MgZ-db-aoL"/>
+                            <constraint firstItem="4pE-pg-YTc" firstAttribute="centerX" secondItem="N5O-lK-H0t" secondAttribute="centerX" id="Pmu-Gm-6UQ"/>
                             <constraint firstItem="SJ9-qk-NHT" firstAttribute="centerX" secondItem="N5O-lK-H0t" secondAttribute="centerX" id="Pz1-O8-idV"/>
                             <constraint firstItem="bxD-1u-mbo" firstAttribute="centerX" secondItem="N5O-lK-H0t" secondAttribute="centerX" id="ktV-lb-Shm"/>
+                            <constraint firstItem="7bW-yN-k1p" firstAttribute="top" secondItem="4pE-pg-YTc" secondAttribute="bottom" constant="20" id="u2O-vu-moD"/>
+                            <constraint firstItem="7bW-yN-k1p" firstAttribute="centerX" secondItem="N5O-lK-H0t" secondAttribute="centerX" id="wTv-mj-j73"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gSj-81-rBF"/>
                     </view>
                     <connections>
-                        <outlet property="itemDetails" destination="SJ9-qk-NHT" id="8pc-uB-tkt"/>
-                        <outlet property="itemLabel" destination="bxD-1u-mbo" id="JYD-PR-VFS"/>
+                        <outlet property="logoCategory" destination="7bW-yN-k1p" id="feZ-Ot-DLO"/>
+                        <outlet property="logoImage" destination="bxD-1u-mbo" id="JYD-PR-VFS"/>
+                        <outlet property="logoName" destination="SJ9-qk-NHT" id="8pc-uB-tkt"/>
+                        <outlet property="logoNumber" destination="4pE-pg-YTc" id="R6e-N4-tsu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sed-s3-cgX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1809" y="34"/>
+            <point key="canvasLocation" x="1808.8" y="33.733133433283363"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="35e-QK-hcp">

@@ -13,6 +13,7 @@
 		ACCC9D0821261CC1005691B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACCC9D0721261CC1005691B0 /* Assets.xcassets */; };
 		ACCC9D0B21261CC1005691B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCC9D0921261CC1005691B0 /* LaunchScreen.storyboard */; };
 		ACCC9D1321263074005691B0 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCC9D1221263074005691B0 /* DetailsViewController.swift */; };
+		ACCC9D15212652D6005691B0 /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCC9D14212652D6005691B0 /* Logo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		ACCC9D0A21261CC1005691B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACCC9D0C21261CC1005691B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACCC9D1221263074005691B0 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		ACCC9D14212652D6005691B0 /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				ACCC9D0221261CBF005691B0 /* ViewController.swift */,
 				ACCC9D1221263074005691B0 /* DetailsViewController.swift */,
 				ACCC9D0421261CBF005691B0 /* Main.storyboard */,
+				ACCC9D14212652D6005691B0 /* Logo.swift */,
 				ACCC9D0721261CC1005691B0 /* Assets.xcassets */,
 				ACCC9D0921261CC1005691B0 /* LaunchScreen.storyboard */,
 				ACCC9D0C21261CC1005691B0 /* Info.plist */,
@@ -140,6 +143,7 @@
 			files = (
 				ACCC9D0321261CBF005691B0 /* ViewController.swift in Sources */,
 				ACCC9D0121261CBF005691B0 /* AppDelegate.swift in Sources */,
+				ACCC9D15212652D6005691B0 /* Logo.swift in Sources */,
 				ACCC9D1321263074005691B0 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
